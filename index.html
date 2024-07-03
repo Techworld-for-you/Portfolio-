@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a838ceef9a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.jpg" alt="Logo image" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#protfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>I'm Sandhya,<br><span>A passionate individual hailing from the vibrant landscapes of India.</span><br><span>Equipped with a Bachelor's degree in Computer Applications (BCA),<br>
+                I'm on a journey into the fascinating world of technology.</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-----------about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.jpg" alt="user"  width="500px" height="500">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm , a recent BCA graduate with expertise in UI/UX design, frontend development, and Python. Proficient in HTML, CSS, and JavaScript, I've transformed concepts into reality through projects like a Python Snake Game and an Online Cake Shop. Combining a creative eye for design with hands-on coding skills, I'm on a journey of perpetual learning and currently exploring Full Stack Development on Udemy. When not immersed in code, you'll find me on the badminton court or exploring local destinations. Eager to contribute my skills to innovative projects and collaborate with dynamic teams, I invite you to explore my portfolio for a glimpse into my UI/UX and coding journey.
+                        <br>
+                        <br> Let's connect and explore possibilities together!    
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming</span><br>Python<br>JavaScript</li><br>
+                                <li><span>Web Development <b>(</b>Frontend<b>)</b></span><br>HTML <br> CSS</li><br>
+                                <li><span>UI/UX</span><br>Figma</li>
+                            </ul><br>
+                        </div>
+
+                        <div class="tab-contents" id="projects">
+                            <ul>
+                                <li><span>Python Mini Project</span><br>Developed classic Snake Game<br>showcasing Python programming<br>skills.</li><br>
+                                <li><span>Online Cake Shop<b>(</b>Frontend<b>)</b></span><br>Created responsive Cake Shop website<br>
+                                    using HTML, CSS, and JavaScript.</li><br>
+                                    <li><span>E-commerce Product Page<b>(</b>Figma<b>)</b></span><br>Designed a user-friendly E-commerce<br>
+                                    Product Page showcasing skills in Figma.</li>
+                            </ul><br>
+                        </div>
+
+                        <div class="tab-contents" id="certifications">
+                            <ul>
+                                <li><span>Python Certification</span><br>Obtained at Hope Foundation<b>(</b>Offline class<b>)</b><br>
+                                    Completion Year: 2023</li><br>
+                                <li><span>UI/UX Design Certification</span><br>Udemy (</b>Online Course<b>)</b><br>
+                                    Completion Year: 2024</li><br>
+                                <li><span>Full Stack Development<b>(</b>In Progress<b>)</b></span><br>Pursuing certification on Udemy<br></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------Services--------->    
+<div id="service">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Python Development</h2><br>
+                <p><h3>Specializing in Python, I provide comprehensive development services for web applications, automation scripts, and data analysis projects. My expertise lies in leveraging the versatility of Python to create efficient, scalable, and innovative solutions tailored to your needs.</h3></p>
+                <a href="#"></a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Front-end Development<br><h3>(HTML, CSS, JavaScript)</h3</h2><br>
+                <p>Crafting engaging and responsive user interfaces is my forte. Proficient in HTML for structure, CSS for styling, and JavaScript for dynamic interactions, I ensure seamless and visually appealing frontend experiences.</p>
+                <a href="#"></a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>UI/UX Design</h2><br>
+                <p><h3>With a keen eye for design principles and user-centric approaches, I specialize in creating intuitive and visually striking user interfaces. From wireframes to interactive prototypes, I bring ideas to life while focusing on enhancing the overall user experience.</h3></p>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------portfolio----------->
+
+<div id="protfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/fig2.jpg" alt="work">
+                <div class="layer">
+                    <h3>UI/UX</h3>
+                    <p>Designed the UI/UX for a coffee shop app, ensuring a seamless and visually captivating user experience. Utilized design principles, wireframing, and prototyping in tools like Figma to create an intuitive and engaging interface, enhancing the overall coffee ordering journey.</p>
+                    <a href="Fig.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Images/sg.png" alt="work">
+                <div class="layer">
+                    <h3>Python Game</h3>
+                    <p>Created a classic Snake Game using Python, showcasing skills in game development and logic. The project demonstrates proficiency in Python programming and the ability to design and implement interactive applications.</p>
+                    <a href="python.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Images/cake.jpg" alt="work">
+                <div class="layer">
+                    <h3>Cake Shop</h3>
+                    <p>Developed a dynamic and visually appealing Online Cake Shop using HTML, CSS, and JavaScript. Implemented a user-friendly interface for browsing and ordering cakes, with interactive features to enhance the customer experience.</p>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!------------contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i><a href="mailto:sandhyasandy.1316@gmail.com">sandhyasandy.1316@gmail.com</a></p>
+                <p> <i class="fa-solid fa-phone"></i><a href="tel:6360517079">6360517019</a></p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://wa.me:6360517019/"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="Images/Sandy's CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sandy</p>
+    </div>
+</div>
+
+
+
+    <!-------Javascript-------->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu =document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+  
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbykWUI89R_ZR6I6dgwOAMvWwJf_kEC1ZxvbUIGzr3g2YIwuB2R9zNST_p55TL8B9TB7Gg/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        msg.innerHTML = "";
+        const nameInput = form.elements['Name'].value.trim();
+        const emailInput = form.elements['Email'].value.trim();
+        const messageInput = form.elements['Message'].value.trim();
+        if (!nameInput || !emailInput || !messageInput) {
+            msg.innerHTML = "Please fill in all fields.";
+            return;
+        }
+     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+        form.reset();
+        msg.innerHTML = "Message Sent Successfully";
+        setTimeout(function () {
+            msg.innerHTML = "";
+        }, 5000);
+    })
+    .catch(error => {
+        msg.innerHTML = "Error submitting the form. Please try again later.";
+        console.error('Error!', error.message);
+    });
+});
+
+</script>
+</body>
+</html>
